@@ -21,12 +21,17 @@ LJAligenmentStatusBottom,     // 图标在下，文本在上(居中)
 ###样式代码
 ```
 创建button
-
+```
 LJButton *button = [[LJButton alloc]initWithAligenmentStatus:LJAligenmentStatusBottom andTitleStr:@"图标在下，文本在上(居中)" andTitleFont:10 andImageNormal:@"bub_black" andImageHighL:nil andFrame:CGRectMake(100, 50, 200,50) andSelector:^(NSUInteger tag) {
+```
 //点击事件
+```
 NSLog(@"000000");
 
 }];
+```
 //    button.LJ_padding = 50;//设置文本和图片的间隔距离
+```
 button.backgroundColor = [UIColor greenColor];
+```
 [self.view addSubview:button];
