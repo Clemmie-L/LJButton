@@ -65,23 +65,4 @@ typedef void(^UIButtonClickAction)(NSUInteger tag);
  */
 @property (nonatomic, assign) CGFloat LJ_padding;
 
-/**
- button 背景颜色
- */
-@property(nullable,nonatomic,copy)UIColor *LJ_backgroundColor;
-
-/**
- 设置按钮文本颜色
- @param color [UIColor blackColor] 默认黑色
- @param state 按钮的状态
- */
-- (void)LJ_TitleColcor:(nullable UIColor *)color forState:(UIControlState)state;
-
-/**
- 设置按钮背景图片
- @param image 图片
- @param state 按钮的状态
- */
-- (void)LJ_BackgroundImage:(nullable UIImage *)image forState:(UIControlState)state;
-
 @end

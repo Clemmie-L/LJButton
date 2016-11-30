@@ -32,8 +32,8 @@
 //            }
 //        }];
 //        button.tag = i;
-//        button.LJ_backgroundColor = [UIColor greenColor];
-//        [button LJ_TitleColcor:[UIColor redColor] forState:UIControlStateNormal];
+//        button.backgroundColor = [UIColor greenColor];
+//        [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
 //        [self.view addSubview:button];
 //    }
     
@@ -42,7 +42,7 @@
         NSLog(@"000000");
     }];
 //    button.LJ_padding = 50;//设置文本和图片的间隔距离
-    button.LJ_backgroundColor = [UIColor greenColor];
+    button.backgroundColor = [UIColor greenColor];
     [self.view addSubview:button];
     
     
@@ -50,27 +50,27 @@
         NSLog(@"111111");
     }];
 //    button1.LJ_padding = 50;//设置文本和图片的距离
-    button1.LJ_backgroundColor = [UIColor greenColor];
+    button1.backgroundColor = [UIColor greenColor];
     [self.view addSubview:button1];
     
     
     LJButton *button2 = [[LJButton alloc]initWithAligenmentStatus:LJAligenmentStatusRight andTitleStr:@"右对齐" andTitleFont:15 andImageNormal:@"bub_black" andImageHighL:nil andFrame:CGRectMake(100, CGRectGetMaxY(button1.frame)+10, 200, 50) andSelector:^(NSUInteger tag) {
         NSLog(@"2222");
     }];
-    button2.LJ_backgroundColor = [UIColor greenColor];
+    button2.backgroundColor = [UIColor greenColor];
     [self.view addSubview:button2];
     
     
     LJButton *button3 = [[LJButton alloc]initWithAligenmentStatus:LJAligenmentStatusCenter andTitleStr:@"居中对齐" andTitleFont:25 andImageNormal:@"bub_black" andImageHighL:nil andFrame:CGRectMake(100, CGRectGetMaxY(button2.frame)+10, 200, 50) andSelector:^(NSUInteger tag) {
         NSLog(@"333333");
     }];
-    button3.LJ_backgroundColor = [UIColor greenColor];
+    button3.backgroundColor = [UIColor greenColor];
     [self.view addSubview:button3];
     
     LJButton *button4 = [[LJButton alloc]initWithAligenmentStatus:LJAligenmentStatusLeft andTitleStr:@"左对齐" andTitleFont:25 andImageNormal:@"bub_black" andImageHighL:nil andFrame:CGRectMake(100, CGRectGetMaxY(button3.frame)+10, 200, 50) andSelector:^(NSUInteger tag) {
         NSLog(@"444444");
     }];
-    button4.LJ_backgroundColor = [UIColor greenColor];
+    button4.backgroundColor = [UIColor greenColor];
     [self.view addSubview:button4];
     
 }

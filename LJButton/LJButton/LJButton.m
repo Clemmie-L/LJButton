@@ -55,7 +55,7 @@
         self.titleLabel.font = [UIFont systemFontOfSize:sizeFont];
         [self setImage:[UIImage imageNamed:iamgeH] forState:UIControlStateHighlighted];
         [self setBackgroundColor:[UIColor clearColor]];
-        [self LJ_TitleColcor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         self.frame = frame;
         //点击事件回调
         if (clickAction) {
@@ -82,45 +82,6 @@
                                        andImageHighL:iamgeH
                                             andFrame:frame
                                          andSelector:clickAction];
-}
-
-#pragma mark - 内方法
-+ (void)load {
-    Method orMethod1 = class_getInstanceMethod(self, @selector(setTitleColor:forState:));
-    Method newMethod1 = class_getInstanceMethod(self, @selector(LJ_TitleColcor:forState:));
-    
-    BOOL success1 = class_addMethod(self, @selector(setTitleColor:forState:), method_getImplementation(newMethod1), method_getTypeEncoding(newMethod1));
-    
-    if (success1) { //如果在父类没有定义原始方法，orMethod 为nil, 则用 class_replace 替换。如果有 则正常的替换
-        class_replaceMethod(self, @selector(LJ_TitleColcor:forState:), method_getImplementation(orMethod1), method_getTypeEncoding(orMethod1));
-    }else {
-        method_exchangeImplementations(orMethod1, newMethod1);
-    }
-    
-    Method orMethod2 = class_getInstanceMethod(self,@selector(setBackgroundImage:forState:));
-    Method newMethod2 = class_getInstanceMethod(self, @selector(LJ_BackgroundImage:forState:));
-    
-    BOOL success2 = class_addMethod(self, @selector(setBackgroundImage:forState:), method_getImplementation(newMethod2), method_getTypeEncoding(newMethod2));
-    if (success2) {
-        class_replaceMethod(self, @selector(LJ_BackgroundImage:forState:), method_getImplementation(orMethod2), method_getTypeEncoding(orMethod2));
-    }else {
-        method_exchangeImplementations(orMethod2, newMethod2);
-    }
-}
-
-#pragma mark - 按钮背景图片
-- (void)LJ_BackgroundImage:(UIImage *)image forState:(UIControlState)state {
-    
-}
-
-#pragma mark - 按钮背景颜色
-- (void)setLJ_backgroundColor:(UIColor *)LJ_backgroundColor {
-    self.backgroundColor = LJ_backgroundColor;
-}
-
-#pragma mark - 设置按钮文本颜色
-- (void)LJ_TitleColcor:(UIColor *)color forState:(UIControlState)state {
-    
 }
 
 #pragma mark - 按钮点击事件;
