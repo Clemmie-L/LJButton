@@ -20,17 +20,37 @@ LJAligenmentStatusBottom,     // 图标在下，文本在上(居中)
 
 ###样式代码
 
-创建button
+创建button1
 
-LJButton *button = [[LJButton alloc]initWithAligenmentStatus:LJAligenmentStatusBottom andTitleStr:@"图标在下，文本在上(居中)" 
-andTitleFont:10 
-andImageNormal:@"bub_black" 
-andImageHighL:nil 
-andFrame:CGRectMake(100, 50, 200,50) 
-andSelector:^(NSUInteger tag) {
-//点击事件
-NSLog(@"000000");
-}];
+LJButton *button = [[LJButton   alloc]initWithAligenmentStatus:LJAligenmentStatusBottom    
+                   andTitleStr:@"图标在下，文本在上(居中)" 
+                   andTitleFont:10 
+                   andImageNormal:@"bub_black" 
+                   andImageHighL:nil 
+                   andFrame:CGRectMake(100, 50, 200,50) 
+                   andSelector:^(NSUInteger tag) {
+                   //点击事件
+                   NSLog(@"000000");
+                }];
 //    button.LJ_padding = 50;//设置文本和图片的间隔距离
 button.backgroundColor = [UIColor greenColor];
 [self.view addSubview:button];
+
+创建button2
+
+LJButton *button1 = [LJButton buttonAligenmentStatus:LJAligenmentStatusTop 
+                    andTitleStr:@"图标在上，文本在上(居中)" 
+                    andTitleFont:15 
+                    andImageNormal:@"bub_black" 
+                    andImageHighL:nil 
+            andFrame:CGRectMake(100,CGRectGetMaxY(button.frame)+10, 200,50)
+                    andSelector:^(NSUInteger tag) {
+                    NSLog(@"111111");
+                    }];
+//    button1.LJ_padding = 50;//设置文本和图片的距离
+button1.backgroundColor = [UIColor greenColor];
+[self.view addSubview:button1];
+
+
+
+
