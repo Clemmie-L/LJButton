@@ -13,6 +13,7 @@
 		A41B8DB71DEEC67300F537F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41B8DB51DEEC67300F537F8 /* Main.storyboard */; };
 		A41B8DB91DEEC67300F537F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A41B8DB81DEEC67300F537F8 /* Assets.xcassets */; };
 		A41B8DBC1DEEC67300F537F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41B8DBA1DEEC67300F537F8 /* LaunchScreen.storyboard */; };
+		A41B8DC61DEECD3500F537F8 /* LJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B8DC51DEECD3500F537F8 /* LJButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A41B8DB81DEEC67300F537F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A41B8DBB1DEEC67300F537F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A41B8DBD1DEEC67300F537F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A41B8DC41DEECD3500F537F8 /* LJButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJButton.h; sourceTree = "<group>"; };
+		A41B8DC51DEECD3500F537F8 /* LJButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		A41B8DA01DEEC67300F537F8 = {
 			isa = PBXGroup;
 			children = (
+				A41B8DC31DEECD3500F537F8 /* LJButton */,
 				A41B8DAB1DEEC67300F537F8 /* LJButton */,
 				A41B8DAA1DEEC67300F537F8 /* Products */,
 			);
@@ -79,6 +83,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A41B8DC31DEECD3500F537F8 /* LJButton */ = {
+			isa = PBXGroup;
+			children = (
+				A41B8DC41DEECD3500F537F8 /* LJButton.h */,
+				A41B8DC51DEECD3500F537F8 /* LJButton.m */,
+			);
+			name = LJButton;
+			path = LJButton/LJButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +124,7 @@
 				TargetAttributes = {
 					A41B8DA81DEEC67300F537F8 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V75X3S2Z85;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +168,7 @@
 				A41B8DB41DEEC67300F537F8 /* ViewController.m in Sources */,
 				A41B8DB11DEEC67300F537F8 /* AppDelegate.m in Sources */,
 				A41B8DAE1DEEC67300F537F8 /* main.m in Sources */,
+				A41B8DC61DEECD3500F537F8 /* LJButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V75X3S2Z85;
 				INFOPLIST_FILE = LJButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gw.LJButton;
@@ -283,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V75X3S2Z85;
 				INFOPLIST_FILE = LJButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gw.LJButton;
