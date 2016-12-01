@@ -1,6 +1,6 @@
 # LJButton
 
-![image](http://github.com/Clemmie-L/LJButton/raw/master/Snip20161130_18.png)
+![image](https://github.com/Clemmie-L/LJButton/raw/master/Snip20161130_18.png)
 
 ```
 一个封装系统的button。
