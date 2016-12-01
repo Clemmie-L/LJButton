@@ -45,7 +45,6 @@
     button.backgroundColor = [UIColor greenColor];
     [self.view addSubview:button];
     
-    
     LJButton *button1 = [LJButton buttonAligenmentStatus:LJAligenmentStatusTop andTitleStr:@"图标在上，文本在上(居中)" andTitleFont:15 andImageNormal:@"bub_black" andImageHighL:nil andFrame:CGRectMake(100, CGRectGetMaxY(button.frame)+10, 200,50) andSelector:^(NSUInteger tag) {
         NSLog(@"111111");
     }];

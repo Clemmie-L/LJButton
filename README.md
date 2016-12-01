@@ -1,4 +1,7 @@
 # LJButton
+
+![image](http://github.com/Clemmie-L/LJButton/raw/master/Snip20161130_18.png)
+
 ```
 一个封装系统的button。
 好处：集中式创建，减少代码操作量，快速创建
